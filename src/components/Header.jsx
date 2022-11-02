@@ -5,7 +5,7 @@ function Header() {
     <nav className='green darken-3'>
       <div className='nav-wrapper'>
         <a
-          href='https://ardintsev-sergey.github.io/react-movies/'
+          href='/'
           className='brand-logo'
         >
           React Shop
@@ -16,7 +16,7 @@ function Header() {
         >
           <li>
             <a
-              href='https://github.com/ardintsev-sergey/react-movies'
+              href='https://github.com/ardintsev-sergey/react-shop/'
               target='_blank'
               rel='noreferrer'
             >
