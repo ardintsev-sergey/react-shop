@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ShopContext } from '../context';
 import Item from './Item';
 
-const ItemsList = (props) => {
-  const { items = [], addToBasket = Function.prototype } = props;
+const ItemsList = () => {
+  const { items = [] } = useContext(ShopContext);
   if (!items.length) {
     return <h3>Здесь ничего нет</h3>;
   }
@@ -11,7 +12,6 @@ const ItemsList = (props) => {
       {items.map((item) => (
         <Item
           key={item.mainId}
-          addToBasket={addToBasket}
           {...item}
         />
       ))}
